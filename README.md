@@ -74,6 +74,12 @@ Frontend (React) → REST API → Backend (Node.js/Express) → MongoDB
 ## 📸 Screenshots
 
 ![Home Page](./Screenshot%202026-05-01%20152653.png)
+![Products Page](./products.png)
+![Cart Page](./cart.png)
+![Payment Page](./payment.png)
+![Paymentsucess Page](./paymentsucess.png)
+![Order Page](./orders.png)
+
 
 Example:
 
