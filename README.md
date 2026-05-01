@@ -73,6 +73,8 @@ Frontend (React) → REST API → Backend (Node.js/Express) → MongoDB
 
 ## 📸 Screenshots
 
+Screenshot 2026-05-01 152653.png
+
 Example:
 
 * Home Page
