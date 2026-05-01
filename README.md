@@ -1,16 +1,125 @@
-# React + Vite
+# 🛒 MERN E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack E-commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project demonstrates real-world full-stack development including authentication, product management, cart functionality, and deployment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+👉 https://mernecommerce-2v47.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🔑 Demo Credentials
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 User Login
+
+Email: shiva@gmail.com
+Password: 123456
+
+### 🛠️ Admin Login
+
+Email: mahesh@gmail.com
+Password: 123
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* HTML5
+* CSS3
+* JavaScript
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+### Tools & Deployment
+
+* Git & GitHub
+* Vercel
+
+---
+
+## ✨ Features
+
+* 🔐 JWT-based Authentication (Login & Signup)
+* 🛍️ Product Listing & Product Details
+* 🛒 Add to Cart & Cart Management
+* 📦 Order Management System
+* 🧑‍💼 Admin Dashboard (Manage Products & Users)
+* 🔍 Search & Filtering Functionality
+* 📱 Fully Responsive Design
+
+---
+
+## 🧠 System Architecture
+
+Frontend (React) → REST API → Backend (Node.js/Express) → MongoDB
+
+* Secure API handling
+* Protected routes
+* Role-based access (Admin/User)
+
+---
+
+## 📸 Screenshots
+
+Example:
+
+* Home Page
+* Product Page
+* Cart Page
+* Admin Dashboard
+
+---
+
+## 📂 Project Structure
+
+/client   → Frontend (React)
+/server   → Backend (Node.js & Express)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+   git clone https://github.com/BollamBhaskar/mernecommerce.git
+
+2. Navigate to project folder
+   cd mernecommerce
+
+3. Install dependencies
+   npm install
+
+4. Run the application
+   npm start
+
+---
+
+## 📌 Future Enhancements
+
+* 💳 Payment Gateway Integration (Razorpay/Stripe)
+* 📊 Admin Analytics Dashboard
+* 🔔 Notifications System
+* ⚡ Performance Optimization
+
+---
+
+## 🙌 Acknowledgement
+
+This project was developed as part of my MERN stack learning journey to gain hands-on experience in building scalable full-stack applications.
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me on LinkedIn for feedback, suggestions, or collaboration.
