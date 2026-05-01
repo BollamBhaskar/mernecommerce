@@ -1,0 +1,246 @@
+/* ================================
+   Signup Page — premium dark theme
+   ================================ */
+
+.signup-container {
+  display: flex;
+  height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  overflow: hidden;
+}
+
+/* ---- Left image panel ---- */
+.signup-left {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* dark gradient overlay on the image */
+.signup-left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 99, 255, 0.45) 0%,
+    rgba(11, 18, 32, 0.6) 100%
+  );
+}
+
+/* badge sitting on top of the overlay */
+.signup-left-badge {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+  color: #fff;
+}
+
+.signup-left-badge h3 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.signup-left-badge p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Right form panel ---- */
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(700px 500px at 80% 10%, rgba(108, 99, 255, 0.18), transparent 60%),
+    radial-gradient(600px 400px at 20% 90%, rgba(51, 214, 159, 0.1), transparent 55%),
+    #0b1220;
+  padding: 24px;
+}
+
+/* ---- Glass card ---- */
+.signup-box {
+  width: min(420px, 100%);
+  padding: 40px 36px;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.04)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(14px);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* ---- Logo / brand mark ---- */
+.signup-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.signup-brand-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6c63ff, #8b84ff);
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+
+.signup-brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* ---- Headings ---- */
+.signup-box h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #fff;
+}
+
+.signup-box .signup-sub {
+  margin: 0 0 28px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---- Form fields ---- */
+.signup-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.signup-field label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.signup-field input {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.signup-field input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.signup-field input:focus {
+  border-color: rgba(108, 99, 255, 0.7);
+  box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.18);
+}
+
+.signup-field input.error-input {
+  border-color: rgba(255, 77, 79, 0.7);
+  box-shadow: 0 0 0 4px rgba(255, 77, 79, 0.14);
+}
+
+/* ---- Error text ---- */
+.error-text {
+  font-size: 13px;
+  color: #ff6b6b;
+  margin: -8px 0 12px;
+  text-align: center;
+}
+
+/* ---- Submit button ---- */
+.signup-box button[type="submit"] {
+  width: 100%;
+  padding: 13px;
+  margin-top: 6px;
+  background: linear-gradient(135deg, #6c63ff, #8b84ff);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.signup-box button[type="submit"]:hover:not(:disabled) {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.signup-box button[type="submit"]:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ---- Divider ---- */
+.signup-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 12px;
+}
+
+.signup-divider::before,
+.signup-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ---- Footer link ---- */
+.login-text {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.login-text span {
+  color: #8b84ff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.15s;
+}
+
+.login-text span:hover {
+  color: #fff;
+}
+
+/* ---- Responsive: stack on small screens ---- */
+@media (max-width: 700px) {
+  .signup-left {
+    display: none;
+  }
+}

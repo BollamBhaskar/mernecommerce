@@ -1,0 +1,214 @@
+/* ================================
+   Single Product Page
+   ================================ */
+
+.sp-back {
+  margin-bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* ---- Two-column layout ---- */
+.sp-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  min-height: 520px;
+}
+
+@media (max-width: 760px) {
+  .sp-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Image panel ---- */
+.sp-image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  min-height: 340px;
+}
+
+.sp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.sp-no-image {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+/* ---- Details panel ---- */
+.sp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 8px 0;
+}
+
+.sp-category {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-2);
+}
+
+.sp-title {
+  margin: 0 0 14px;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.sp-desc {
+  margin: 0 0 22px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---- Price ---- */
+.sp-price-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.sp-price {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--primary-2);
+  letter-spacing: -0.5px;
+}
+
+.sp-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(51, 214, 159, 0.14);
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ---- Divider ---- */
+.sp-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 20px 0;
+}
+
+/* ---- Meta info ---- */
+.sp-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sp-meta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.sp-meta-label {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+}
+
+.sp-meta-value {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+/* ---- Action buttons ---- */
+.sp-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.sp-btn-buy {
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 14px;
+  letter-spacing: 0.02em;
+}
+
+.sp-btn-cart {
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 14px;
+}
+
+/* ---- Loading skeleton ---- */
+.sp-skeleton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  min-height: 520px;
+}
+
+.sp-skeleton-img {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  aspect-ratio: 1 / 1;
+  animation: sp-pulse 1.4s ease-in-out infinite;
+}
+
+.sp-skeleton-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 8px;
+}
+
+.sp-skeleton-line {
+  height: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  animation: sp-pulse 1.4s ease-in-out infinite;
+}
+
+.sp-skeleton-line--title {
+  height: 28px;
+  width: 70%;
+}
+
+.sp-skeleton-line--short {
+  width: 40%;
+}
+
+@keyframes sp-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@media (max-width: 760px) {
+  .sp-skeleton {
+    grid-template-columns: 1fr;
+  }
+}
